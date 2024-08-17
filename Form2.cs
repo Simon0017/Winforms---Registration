@@ -25,11 +25,11 @@ namespace Registration
 
         private bool IsValid()
         {
-            if (textBox1.Text.TrimStart() == string.Empty()){
+            if (textBox1.Text.TrimStart() == string.Empty){
                 MessageBox.Show("Enter Valid Username");
                 return false;
             }
-            if (textBox2.Text.TrimStart() == string.Empty()){
+            if (textBox2.Text.TrimStart() == string.Empty){
                 MessageBox.Show("Enter Valid Username");
                 return false;
             }
@@ -54,5 +54,7 @@ namespace Registration
                 }
             }   
         }
+
+      
     }
 }
