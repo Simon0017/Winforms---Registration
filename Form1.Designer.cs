@@ -47,6 +47,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // button1
@@ -69,7 +70,6 @@
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Full Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -80,7 +80,6 @@
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Username";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
@@ -119,7 +118,6 @@
             this.label4.Size = new System.Drawing.Size(153, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "Registration Form";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
             // 
@@ -156,7 +154,6 @@
             this.label6.Size = new System.Drawing.Size(58, 13);
             this.label6.TabIndex = 7;
             this.label6.Text = "ID Number";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox5
             // 
@@ -165,7 +162,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(225, 20);
             this.textBox5.TabIndex = 14;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox6
             // 
@@ -184,7 +180,6 @@
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "Employer";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -201,6 +196,7 @@
             this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox7.Location = new System.Drawing.Point(460, 202);
             this.textBox7.Name = "textBox7";
+            this.textBox7.PasswordChar = '*';
             this.textBox7.Size = new System.Drawing.Size(225, 20);
             this.textBox7.TabIndex = 18;
             // 
@@ -209,6 +205,7 @@
             this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.textBox8.Location = new System.Drawing.Point(460, 173);
             this.textBox8.Name = "textBox8";
+            this.textBox8.PasswordChar = '*';
             this.textBox8.Size = new System.Drawing.Size(225, 20);
             this.textBox8.TabIndex = 17;
             // 
@@ -232,12 +229,24 @@
             this.label10.TabIndex = 15;
             this.label10.Text = "Password";
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(568, 296);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(42, 13);
+            this.linkLabel1.TabIndex = 19;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Sign in ";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(697, 368);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label9);
@@ -286,6 +295,7 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
